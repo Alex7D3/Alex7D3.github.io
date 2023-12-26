@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+    --primary-color: white;
+    --bg-color: #262626;
+    --highlight-color: #454545;
+    --secondary-color: #7FFF00;
+}
+
+body {
+  font-family: 'Yu Gothic Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+
+  -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+    font-family: 'Yu Gothic';
+    border: none;
+    color: var(--primary-color);
+    width: max-content;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 500ms ease;
+    background-color: var(--bg-color);
+    
+}
+
+button:hover {
+    background: var(--highlight-color);
+    color: var(--primary-color);
+}
