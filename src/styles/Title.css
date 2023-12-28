@@ -1,10 +1,16 @@
 #title {
     min-height: 100vh;
     min-height: 100svh;
+    background: none;
 }
+
 
 #title header, #title canvas {
     display: block;
+}
+
+#title canvas {
+    background-color: none;
 }
 
 #title header {

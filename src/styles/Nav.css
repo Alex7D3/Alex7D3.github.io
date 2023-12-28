@@ -2,7 +2,7 @@ nav {
     width: 100%;
     z-index: 2;
     position: fixed;
-    background: var(--bg-color);
+    background: var(--secondary-color);
     min-width: 1000px;
 }
 nav ul {
@@ -15,18 +15,23 @@ nav ul li {
     white-space: nowrap;
 }
 
-nav button, .check {
+nav ul li a button, nav ul li label {
     font-size: medium;
     padding: 1.5rem 2rem;
 }
 
- nav input[type=checkbox] {
+nav ul li label {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li label input[type=checkbox] {
     line-height: normal;
     width: 16px;
     height: 16px;
  }
 
-nav a[href^="https"] button::after{
+nav ul li a[href^="https"] button::after{
     content: "";
     background: url("../../public/icons8-external-link-26.png");
     background-size: 16px auto;
@@ -36,7 +41,7 @@ nav a[href^="https"] button::after{
     margin-left: 5px;
 }
 
-nav a[download] button::after{
+nav ul li a[download] button::after{
     content: "";
     background: url("../../public/icons8-download-26.png");
     background-size: 16px auto;
@@ -46,10 +51,17 @@ nav a[download] button::after{
     margin-left: 5px;
 }
 
-nav a:hover {
-
+nav ul li a[href^="mailto"] button::after {
+    content: "";
+    background: url("../../public/icons8-mail-24.png");
+    background-size: 16px auto;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 5px;
 }
 
-nav a.active {
-
+nav ul li .active {
+    
+    transition: all 0.5s ease;
 }
