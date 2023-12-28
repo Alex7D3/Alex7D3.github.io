@@ -13,10 +13,10 @@ html {
 }
 
 :root {
-    --primary-color: white;
-    --bg-color: #262626;
+    --primary-color: #FFFFFF;
+    --bg-color: #101010;
     --highlight-color: #454545;
-    --secondary-color: #7FFF00;
+    --secondary-color: #262626;
 }
 
 body {
@@ -46,11 +46,19 @@ button {
     display: inline-block;
     cursor: pointer;
     transition: all 500ms ease;
-    background-color: var(--bg-color);
-    
+    background: var(--secondary-color);
 }
 
 button:hover {
     background: var(--highlight-color);
     color: var(--primary-color);
+}
+
+.left {
+    transform: translateX(-150%);
+    opacity: 0;
+}
+.right {
+    transform: translateX(150%);
+    opacity: 0;
 }
