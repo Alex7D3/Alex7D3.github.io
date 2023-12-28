@@ -4,7 +4,7 @@ const About = function() {
     return (
         <div id="about" className="content">
             <h1>About</h1>
-            <article class="desc">
+            <article className="desc">
                 I am a Computer Science major in my 3rd year of studies at York University.
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
                 Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum .</p></article>

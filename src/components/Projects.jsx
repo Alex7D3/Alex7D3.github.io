@@ -1,5 +1,10 @@
 import "../styles/Projects.css"
+import {useState, useEffect, useRef} from "react";
 const Projects = function() {
+    
+    useEffect(() => {
+
+    }, []);
     return (
         <div id="projects" className="content">
             <h1>Projects</h1>
