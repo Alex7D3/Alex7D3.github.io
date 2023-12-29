@@ -1,19 +1,19 @@
-#title {
+#home {
     min-height: 100vh;
     min-height: 100svh;
     background: none;
 }
 
 
-#title header, #title canvas {
+#home header, #home canvas {
     display: block;
 }
 
-#title canvas {
+#home canvas {
     background-color: none;
 }
 
-#title header {
+#home header {
     font-size: xx-large;
     position: absolute;
     top: 50%;

@@ -13,9 +13,10 @@ html {
 }
 
 :root {
+    color-scheme: dark;
     --primary-color: #FFFFFF;
     --bg-color: #101010;
-    --highlight-color: #454545;
+    --highlight-color: #464646;
     --secondary-color: #262626;
 }
 

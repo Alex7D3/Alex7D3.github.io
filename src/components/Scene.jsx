@@ -1,12 +1,11 @@
 import { useEffect, useRef } from "react";
-import "../styles/Title.css";
 
 const minDist = 175;
 const particleCount = 100;
 const particles = new Array(particleCount)
 let context, mount, canvas;
 
-const Title = function (animation) {
+const Scene = function (animation) {
     mount = useRef(null);
     
     useEffect(() => {
@@ -20,12 +19,7 @@ const Title = function (animation) {
         return () => cancelAnimationFrame(frameID)
     }, []);
 
-    return (
-        <div id="title">
-            <canvas id="scene" ref={mount} />
-            <header><h1>Alex Odorico</h1></header>
-        </div>
-    );
+    return (<canvas id="scene" ref={mount} />);
 };
 
 function init() {
@@ -82,4 +76,4 @@ function drawLine(p1, p2, dist) {
     context.stroke();
 }
 
-export default Title;
+export default Scene;

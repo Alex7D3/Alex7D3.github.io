@@ -6,7 +6,7 @@
     min-height: 100vh;
     min-height: 100svh;
 }
-#projects section {
+#projects div {
     transition-delay: 200ms
     
 }

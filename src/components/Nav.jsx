@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from "react";
-import "../styles/Nav.css";
+import "../styles/nav.css";
 
 
 const Nav = function({ intersecting }) {
     const [isChecked, setChecked] = useState(true);
-
+    console.log(intersecting)
     useEffect(() => {
         console.log("button");
     }, [isChecked]);
@@ -12,17 +12,17 @@ const Nav = function({ intersecting }) {
     return (
         <nav id="nav">
             <ul>
-                <li>className={intersecting === "Title" ? "active" : ""}
-                    <a href="#title">
+                <li className={intersecting === "home" ? "active" : ""}>
+                    <a href="#home">
                         <button><b>Home</b></button>
                     </a>
                 </li>
-                <li>className={intersecting === "About" ? "active" : ""}
+                <li className={intersecting === "about" ? "active" : ""}>
                     <a href="#about">
                         <button><b>About</b></button>
                     </a>
                 </li>
-                <li>className={intersecting === "Projects" ? "active" : ""}
+                <li className={intersecting === "projects" ? "active" : ""}>
                     <a href="#projects">
                         <button><b>Projects</b></button>
                     </a>
