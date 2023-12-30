@@ -39,8 +39,15 @@ function update() {
 }
 
 function windowAdjust() {
-    canvas.width = document.body.clientWidth;
-    canvas.height = window.innerHeight;
+    const width = document.body.clientWidth;
+    const height = window.innerHeight;
+    const ratio = window.devicePixelRatio;
+
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
+    canvas.style.width = width + "px";
+    canvas.style.height = height + "px";
+    context.scale(ratio, ratio);
 }
 
 function draw() {
@@ -48,6 +55,7 @@ function draw() {
     for(let i = 0; i < particleCount; i++) {
         particles[i].x += particles[i].x_velocity;
         particles[i].y += particles[i].y_velocity;
+        drawParticle(particles[i].x, particles[i].y);
 
         if(particles[i].x > window.innerWidth || particles[i].x < 0) 
             particles[i].x_velocity = -particles[i].x_velocity;
@@ -71,9 +79,15 @@ function drawLine(p1, p2, dist) {
     context.strokeStyle = `rgba(255,255,255,${ratio})`;
     context.lineWidth = 1.5
     context.beginPath();
-    context.moveTo(Math.floor(p1.x), Math.floor(p1.y));
-    context.lineTo(Math.floor(p2.x), Math.floor(p2.y));
+    context.moveTo(p1.x, p1.y);
+    context.lineTo(p2.x, p2.y);
     context.stroke();
 }
 
-export default Scene;
+function drawParticle(x, y) {
+    context.fillStyle = "#FFFFFF";
+    context.beginPath();
+    context.arc(x, y, 1, 0, 2 * Math.PI);
+    context.fill();
+}
+export default Scene; 
