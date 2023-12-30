@@ -1,7 +1,7 @@
 #home {
     min-height: 100vh;
     min-height: 100svh;
-    background: none;
+
 }
 
 
@@ -10,11 +10,12 @@
 }
 
 #home canvas {
-    background-color: none;
+    background: var(--bg-color);
 }
 
 #home header {
-    font-size: xx-large;
+    
+    font-size: 5em;
     position: absolute;
     top: 50%;
     left: 50%;

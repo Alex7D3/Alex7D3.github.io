@@ -62,10 +62,10 @@ nav ul li a[href^="mailto"] button::after {
 }
 
 nav ul li.active a button {
-    background-color: #1D1D1D;
+    background-color: #7976CC;
     transition: all 0.5s ease;
 }
 nav ul li.active a button:hover {
-    
+    background-color: #9794FF;
     transition: all 0.5s ease;
 }

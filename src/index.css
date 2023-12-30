@@ -15,9 +15,9 @@ html {
 :root {
     color-scheme: dark;
     --primary-color: #FFFFFF;
-    --bg-color: #101010;
-    --highlight-color: #464646;
-    --secondary-color: #262626;
+    --bg-color: #202033;
+    --highlight-color: #8D8BB3;
+    --secondary-color: #545466;
 }
 
 body {
