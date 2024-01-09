@@ -1,8 +1,25 @@
 #about {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-    min-height: 100svh;
+    justify-items: center;
+    grid-auto-flow: column;
+    align-items: start; 
+    column-gap: 6rem;
+    margin: 0 6rem;
+}
+
+#about > div {
+    border-radius: 10px;
+    border: 2px solid var(--highlight-color);
+    min-width: 0;
+    padding: 20px;
+    background-color: var(--article-color);
+    min-height: 24rem;
+}
+
+#about > div h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+#about > div article {
+    
 }

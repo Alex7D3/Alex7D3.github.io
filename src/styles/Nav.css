@@ -15,31 +15,10 @@ nav ul li {
     white-space: nowrap;
 }
 
-nav ul li a button, nav ul li label {
-    font-size: medium;
+nav ul li a button {
     padding: 1.5rem 2rem;
 }
 
-nav ul li label {
-    display: flex;
-    align-items: center;
-}
-
-nav ul li label input[type=checkbox] {
-    line-height: normal;
-    width: 16px;
-    height: 16px;
- }
-
-nav ul li a[href^="https"] button::after{
-    content: "";
-    background: url("../../public/icons8-external-link-26.png");
-    background-size: 16px auto;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    margin-left: 5px;
-}
 
 nav ul li a[download] button::after{
     content: "";
@@ -61,6 +40,11 @@ nav ul li a[href^="mailto"] button::after {
     margin-left: 5px;
 }
 
+nav ul li a img {
+    width: 50px;
+    margin: 0 1rem;
+}
+
 nav ul li.active a button {
     background-color: #7976CC;
     transition: all 0.5s ease;
@@ -69,3 +53,4 @@ nav ul li.active a button:hover {
     background-color: #9794FF;
     transition: all 0.5s ease;
 }
+

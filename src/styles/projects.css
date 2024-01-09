@@ -1,12 +1,10 @@
 #projects {
-    width: 100%;
+    margin: 0;
+}
+#projects div {
+    width: 60%;
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
-    min-height: 100svh;
-}
-#projects div {
-    transition-delay: 200ms
     
 }

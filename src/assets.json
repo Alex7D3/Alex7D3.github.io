@@ -1,0 +1,48 @@
+{
+    "icons": [
+        { "path": "/C_Programming_Language.svg", "alt": "C" },
+        { "path": "/cpp_logo.svg", "alt": "C++" },
+        { "path": "/python-original.svg", "alt": "Python" },
+        { "path": "/javascript-original.svg", "alt": "JavaScript" },
+        { "path": "/nodejs-original.svg", "alt": "NodeJS" },
+        { "path": "/react-original.svg", "alt": "React" },
+        { "path": "/bootstrap-original.svg", "alt": "Bootstrap" },
+        { "path": "/java-original.svg", "alt": "Java" },
+        { "path": "/android-original.svg", "alt": "Android" },
+        { "path": "/kotlin-original.svg", "alt": "Kotlin" },
+        { "path": "/mongodb-original-wordmark.svg", "alt": "MongoDB" },
+        { "path": "/redis-original.svg", "alt": "Redis" },
+        { "path": "/mysql-original.svg", "alt": "MySQL" },
+        { "path": "/postgresql-original.svg", "alt": "Postgres" },
+        { "path": "/css3-original.svg", "alt": "CSS 3" },
+        { "path": "/html5-original.svg", "alt": "html 5" },
+        { "path": "/bash-plain.svg", "alt": "Bash" }
+    ],
+
+    "projects": [
+        {
+            "name": "Sudoku Prime",
+            "desc": "",
+            "url": "",
+            "tools": {
+
+            }
+        },
+        {
+            "name": "My Ani Bot",
+            "desc": "",
+            "url": "",
+            "tools": {
+
+            }
+        },
+        {
+            "name": "Toronto Transit Tracker",
+            "desc": "",
+            "url": "",
+            "tools": {
+
+            }
+        }
+    ]
+}

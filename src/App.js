@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Scene from "./components/Scene";
 import Nav from "./components/Nav";
 
@@ -7,14 +5,16 @@ import "./styles/home.css";
 import "./styles/about.css";
 import "./styles/projects.css"
 
+import assets from "./assets.json";
 import React, { useRef, useState, useEffect } from "react";
+const { icons, projects } = assets;
 
 function App() {
     const homeRef = useRef(null);
     const aboutRef = useRef(null);
     const projectsRef = useRef(null);
 
-    const [intersecting, setIntersecting] = useState("title");
+    const [intersecting, setIntersecting] = useState("home");
     
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -35,38 +35,46 @@ function App() {
     
     return (
         <div className="App">
+            <Scene/>
             <Nav intersecting={intersecting}/>
-            <section id="home" ref={homeRef}>
-                <header><h1>Alex Odorico</h1></header>
-                <Scene />
-            </section>
-            <section id="about" ref={aboutRef}>
-            <h1>About</h1>
-            <article className="desc">
-                I am a Computer Science major in my 3rd year of studies at York University.
-                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                    Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum .</p></article>
-            </section>
-            <section id="projects" ref={projectsRef}>
-                <h1>Projects</h1>
-                <div>
-                    <h2>Sudoku Prime</h2>
-                    <p>efefefefefefef</p>
-                    <p>fefefef</p>
-                </div>
-
-                <div>
-                    <h2>MyAniBot</h2>
-                    <p>efefef</p>
-                    <p>fefefef</p>
-                </div>
-
-                <div>
-                    <h2>Project3</h2>
-                    <p>fefefef</p>
-                    <p>fefefef</p>
-                </div>
-            </section>
+            <main>
+                <section id="home" ref={homeRef}>
+                    <header><h1><div id="caret">~$&nbsp;</div><div id="text">Alex Odorico</div><div id="cursor"/>&nbsp;&nbsp;</h1></header>
+                </section>
+                <section id="about" ref={aboutRef}>
+                    <div>
+                        <h2>About</h2>
+                        <article className="desc">
+                        <p>I am a Computer Science major in my 3rd year of studies at York University.
+                        Nice to meet you!</p>
+                        
+                        <p>
+                        I always look forward to opportunities learning new things. I have a particular fondness for
+                        Algorithms and Data Structures.
+                        </p>
+                        </article>
+                    </div>
+                    <div>
+                        <h2>Tools and Technologies</h2>
+                        <div>
+                            {icons.map(({ path, alt }, idx) => 
+                                <img key={idx} src={path} alt={alt} title={alt} width="60px" height="60px" />
+                            )}
+                        </div>
+                    </div>
+                </section>
+                <section id="projects" ref={projectsRef}>
+                    <div>
+                        <h2>Projects</h2>
+                        {projects.map(({ name, desc, tools, url }, idx) => 
+                            <div key={idx}><h3>{name}</h3></div>
+                        )}
+                    </div>
+                </section>
+            </main>
+            <footer>
+                By Alexander Odorico
+            </footer>
         </div>
     );
 }
