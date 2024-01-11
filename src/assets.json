@@ -10,13 +10,14 @@
         { "path": "/java-original.svg", "alt": "Java" },
         { "path": "/android-original.svg", "alt": "Android" },
         { "path": "/kotlin-original.svg", "alt": "Kotlin" },
-        { "path": "/mongodb-original-wordmark.svg", "alt": "MongoDB" },
+        { "path": "/mongodb-original.svg", "alt": "MongoDB" },
         { "path": "/redis-original.svg", "alt": "Redis" },
         { "path": "/mysql-original.svg", "alt": "MySQL" },
         { "path": "/postgresql-original.svg", "alt": "Postgres" },
         { "path": "/css3-original.svg", "alt": "CSS 3" },
         { "path": "/html5-original.svg", "alt": "html 5" },
-        { "path": "/bash-plain.svg", "alt": "Bash" }
+        { "path": "/bash-plain.svg", "alt": "Bash" },
+        { "path": "/git-original.svg", "alt": "Git" }
     ],
 
     "projects": [
