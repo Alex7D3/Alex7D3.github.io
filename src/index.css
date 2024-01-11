@@ -10,7 +10,6 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  letter-spacing: inherit;
 }
 
 :root {
@@ -67,9 +66,8 @@ canvas {
 button {
     font-family: inherit;
     font-size: large;
-    border: none;
     color: var(--primary-color);
-    width: max-content;
+    
     display: inline-block;
     cursor: pointer;
     transition: all 500ms ease;

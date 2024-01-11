@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import "../styles/nav.css";
 
 
@@ -22,8 +22,8 @@ function Nav({ intersecting }) {
                         <button><b>[2] projects</b></button>
                     </a>
                 </li>
-                <li><a href="mailto: ao11@my.yorku.ca"><button><b>Contact</b></button></a></li>
-                <li><a href="f" download><button><b>Resume</b></button></a></li>
+                <li><a href="mailto: ao11@my.yorku.ca"><button><b>contact</b></button></a></li>
+                <li><a href="f" download><button><b>resume</b></button></a></li>
                 <li><a
                     href="https://github.com/Alex7D3"
                     target="_blank"

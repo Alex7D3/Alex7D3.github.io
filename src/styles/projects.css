@@ -6,5 +6,5 @@
     display: grid;
     place-items: center;
     align-content: center;
-    
+    white-space: nowrap;
 }
