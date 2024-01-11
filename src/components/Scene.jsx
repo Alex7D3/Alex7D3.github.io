@@ -2,20 +2,22 @@ import { useEffect, useRef } from "react";
 
 const minDist = 200;
 const BASE_COUNT = 200;
-let particleCount;
 const particles = new Array(BASE_COUNT);
 const winRatio = window.devicePixelRatio;
+let particleCount;
 let context, mount, canvas;
 let WIDTH, HEIGHT;
 let resizeTimer;
+
 function Scene(animation) {
     mount = useRef(null);
     
     useEffect(() => {
         canvas = mount.current;
         context = canvas.getContext("2d");
-        context.lineWidth = 2;
-        windowAdjust();
+        scaleCanvas();
+        init();
+
         const frameID = update();
         window.addEventListener("resize", windowAdjust);
         return () => cancelAnimationFrame(frameID)
@@ -40,7 +42,7 @@ function update() {
     return requestAnimationFrame(update);
 }
 
-function windowAdjust() {
+function scaleCanvas() {
     WIDTH = document.body.clientWidth;
     HEIGHT = document.body.clientHeight;
     canvas.width = WIDTH * winRatio;
@@ -48,10 +50,12 @@ function windowAdjust() {
     canvas.style.width = WIDTH + "px";
     canvas.style.height = HEIGHT + "px";
     context.scale(winRatio, winRatio);
-
+    particleCount = Math.floor(BASE_COUNT * WIDTH / (window.screen.width));
+}
+function windowAdjust() {
     if(resizeTimer) clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-        particleCount = Math.floor(BASE_COUNT * WIDTH / (window.screen.width));
+        scaleCanvas();
         init();
     }, 400);
 }
@@ -82,6 +86,7 @@ function draw() {
 function drawLine(p1, p2, dist) {
     const ratio = Math.floor(minDist - dist) / minDist;
     context.strokeStyle = `rgba(255,255,255,${ratio})`;
+    context.lineWidth = 1.5;
     context.beginPath();
     context.moveTo(p1.x + 0.5, p1.y + 0.5);
     context.lineTo(p2.x + 0.5, p2.y + 0.5);
