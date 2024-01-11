@@ -46,11 +46,15 @@ function App() {
                         <h2>About</h2>
                         <article className="desc">
                         <p>I am a Computer Science major in my 3rd year of studies at York University.
-                        Nice to meet you!</p>
-                        
+                        Pleased to meet you!</p>
+        
                         <p>
-                        I always look forward to opportunities learning new things. I have a particular fondness for
-                        Algorithms and Data Structures.
+                        Technology has always been a part of my life. As a child I always wondered what the video games
+                        I enjoyed look like on the inside, or how computers could talk to each other continents apart.
+                        This curiosity led me to learning coding in highschool, and from that point on I knew the career 
+                        I wanted to pursue.
+                        <p>I have a particular fondness for
+                        Data Structures and Algorithms. I am actively looking for opportunities to expand my skills.</p>
                         </p>
                         </article>
                     </div>
