@@ -23,7 +23,7 @@ function Nav({ intersecting }) {
                     </a>
                 </li>
                 <li><a href="mailto: ao11@my.yorku.ca"><button><b>contact</b></button></a></li>
-                <li><a href="f" download><button><b>resume</b></button></a></li>
+                <li><a href="/AlexanderOdorico_Resume.pdf" download><button><b>resume</b></button></a></li>
                 <li><a
                     href="https://github.com/Alex7D3"
                     target="_blank"
