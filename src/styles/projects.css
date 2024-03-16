@@ -1,10 +1,42 @@
 #projects {
-    margin: 0;
-}
-#projects div {
-    width: 60%;
+    text-align: center;
     display: grid;
-    place-items: center;
-    align-content: center;
-    white-space: nowrap;
+    justify-content: center;
+}
+
+#projects > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    margin: 0 6rem;
+    
+    
+}
+#projects > div > div {
+    height: 100%;
+}
+
+.github {
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+.github::after {
+    content: "";
+    background: url("../../public/icons8-external-link-26.png");
+    background-size: 16px auto;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#projects div .content article {
+    margin: 1rem 0;
+} 
+
+#projects > h2 {
+    
+    margin-top: 6rem;
+    margin-bottom: 1rem;
 }

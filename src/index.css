@@ -15,8 +15,9 @@ html {
 :root {
     color-scheme: dark;
     --primary-color: #FFFFFF;
-    --bg-color: #121212;
-    --article-color: #222222;
+    --bg-color: rgb(18, 18, 18);
+    --article-color: rgba(40, 40, 40, 0.80);
+    --nav-color: #363636;
     --highlight-color: #8D8BB3;
     --secondary-color: #545466;
 }
@@ -46,7 +47,11 @@ article {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main {
+.icon-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    
     
 }
 
@@ -63,15 +68,24 @@ canvas {
     z-index: -1;
 }
 
+img#me {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border: 12px solid var(--primary-color);
+}
+
 button {
     font-family: inherit;
     font-size: large;
     color: var(--primary-color);
-    
+    background: var(--nav-color);
     display: inline-block;
     cursor: pointer;
     transition: all 500ms ease;
-    background: var(--secondary-color);
 }
 
 button:hover {

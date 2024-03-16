@@ -2,7 +2,7 @@ nav {
     width: 100%;
     z-index: 2;
     position: fixed;
-    background: var(--secondary-color);
+    background: var(--nav-color);
 }
 nav ul {
     list-style-type: none;
@@ -55,6 +55,5 @@ nav ul li.active a button:hover {
 }
 
 nav ul :nth-child(3) {
-    border-right: 0.25rem solid;
-    border-color: var(--article-color);
+    border-right: 50% solid var(--nav-color);
 }
