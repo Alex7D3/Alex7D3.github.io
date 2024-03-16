@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
 
 const minDist = 200;
-const BASE_COUNT = 200;
-const particles = new Array(BASE_COUNT);
+const BASE_COUNT = 300;
+const positions = new Float32Array(BASE_COUNT);
+const velocities = new Float32Array(BASE_COUNT);
 const winRatio = window.devicePixelRatio;
 let particleCount;
 let context, mount, canvas;
@@ -28,12 +29,10 @@ function Scene(animation) {
 
 function init() {
     for(let i = 0; i < particleCount; i++) {
-        particles[i] = {
-            x: Math.random() * WIDTH,
-            y: Math.random() * HEIGHT,
-            x_velocity: Math.random() - 0.5,
-            y_velocity: Math.random() - 0.5,
-        }
+        positions[i << 1] = Math.random() * WIDTH;
+        positions[(i << 1) + 1] = Math.random() * HEIGHT;
+        velocities[i << 1] = Math.random() - 0.5;
+        velocities[(i << 1) + 1] = Math.random() - 0.5;
     }
 }
 
@@ -59,37 +58,43 @@ function windowAdjust() {
         init();
     }, 400);
 }
-
 function draw() {
+    let dist, dy, dx;
     context.clearRect(0, 0, WIDTH, HEIGHT);
     for(let i = 0; i < particleCount; i++) {
-        particles[i].x += particles[i].x_velocity;
-        particles[i].y += particles[i].y_velocity;
+        positions[i << 1] += velocities[i << 1];
+        positions[(i << 1) + 1] += velocities[(i << 1) + 1];
 
-        if(particles[i].x > WIDTH || particles[i].x < 0) 
-            particles[i].x_velocity = -particles[i].x_velocity;
+        if(positions[i << 1] > WIDTH || positions[i << 1] < 0) 
+            velocities[i << 1] = -velocities[i << 1];
         
-        if(particles[i].y > HEIGHT || particles[i].y < 0) 
-            particles[i].y_velocity = -particles[i].y_velocity;
+        if(positions[(i << 1) + 1] > HEIGHT || positions[(i << 1) + 1] < 0) 
+            velocities[(i << 1) + 1] = -velocities[(i << 1) + 1];
         
         for(let j = i + 1; j < particleCount; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
+            dx = positions[i << 1] - positions[j << 1];
+            dy = positions[(i << 1) + 1] - positions[(j << 1) + 1];
 
-            const dist = Math.sqrt(dx * dx + dy * dy);
+            dist = Math.hypot(dx, dy);
             if(dist < minDist) 
-                drawLine(particles[i], particles[j], dist)
+                drawLine(
+                    positions[i << 1],
+                    positions[(i << 1) + 1],
+                    positions[j << 1],
+                    positions[(j << 1) + 1],
+                    dist
+                );
         }
     }
 }
 
-function drawLine(p1, p2, dist) {
+function drawLine(x1, y1, x2, y2, dist) {
     const ratio = Math.floor(minDist - dist) / minDist;
-    context.strokeStyle = `rgba(255,255,255,${ratio})`;
+    context.strokeStyle = "rgba(255,255,255,".concat(ratio).concat(")");
     context.lineWidth = 1.5;
     context.beginPath();
-    context.moveTo(p1.x + 0.5, p1.y + 0.5);
-    context.lineTo(p2.x + 0.5, p2.y + 0.5);
+    context.moveTo(x1 + 0.5, y1 + 0.5);
+    context.lineTo(x2 + 0.5, y2 + 0.5);
     context.stroke();
 }
 
