@@ -34,7 +34,7 @@
     "projects": [
         {
             "name": "TTC-Tracker",
-            "desc": "A full-stack web app that allows users to track TTC buses in real time. The application implements CRUD actions, allowing users to save and modify their own bus routes.",
+            "desc": "A full-stack web app that allows users to track TTC buses geographically in real time. The application implements CRUD actions, allowing users to save and modify their own bus routes.",
             "url": "https://github.com/Alex7D3/TTC-Tracker",
             "tools": [
                 { "path": "/javascript-original.svg", "alt": "JavaScript" },
@@ -61,7 +61,7 @@
         },
         {
             "name": "Sudoku-Prime",
-            "desc": "An Android app that allows users to to play a game of Sudoku. Users can pick from 3 difficulties, and there is an auto-solve feature. This application was developed by a 4-person team as a class project.",
+            "desc": "An Android app that allows users to to play a game of Sudoku. Users can pick from 3 difficulties and there is an auto-solve feature. This application was developed by a 4-person team as a class project.",
             "url": "https://github.com/Alex7D3/SudokuPrime",
             "tools": [
                 { "path": "/java-original.svg", "alt": "Java" },
