@@ -19,6 +19,11 @@
 .github {
     font-size: 1.5rem;
     color: inherit;
+    text-decoration: none;
+}
+
+.github:hover {
+    text-decoration: underline;
 }
 
 .github::after {
