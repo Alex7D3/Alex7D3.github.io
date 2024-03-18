@@ -27,6 +27,7 @@
         { "path": "/linux-original.svg", "alt": "Linux" },
         { "path": "/windows11-original.svg", "alt": "Windows" },
         { "path": "/raspberrypi-original.svg", "alt": "RaspberryPi" },
+        { "path": "/docker-plain.svg", "alt": "Docker"},
         { "path": "/amazonwebservices-original-wordmark.svg", "alt": "AWS"},
         { "path": "/azure-original.svg", "alt": "Azure" }
     ],
@@ -78,6 +79,7 @@
                 { "path": "/maven-original.svg", "alt": "Maven" },
                 { "path": "/spring-original.svg", "alt": "Spring" },
                 { "path": "/mysql-original.svg", "alt": "MySQL" },
+                { "path": "/docker-plain.svg", "alt": "Docker"},
                 { "path": "/azure-original.svg", "alt": "Azure" }
             ]
         },
