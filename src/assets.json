@@ -14,7 +14,7 @@
         { "path": "/bootstrap-original.svg", "alt": "Bootstrap" },
         { "path": "/java-original.svg", "alt": "Java" },
         { "path": "/android-original.svg", "alt": "Android" },
-        { "path": "/gradle-original.svg", "alt": "Gradle"},
+        { "path": "/ICON-GRADLE_CMYK.svg", "alt": "Gradle"},
         { "path": "/maven-original.svg", "alt": "Maven" },
         { "path": "/kotlin-original.svg", "alt": "Kotlin" },
         { "path": "/spring-original.svg", "alt": "Spring" },
@@ -67,7 +67,7 @@
             "tools": [
                 { "path": "/java-original.svg", "alt": "Java" },
                 { "path": "/android-original.svg", "alt": "Android" },
-                { "path": "/gradle-original.svg", "alt": "Gradle"}
+                { "path": "/ICON-GRADLE_CMYK.svg", "alt": "Gradle"}
             ]
         },
         {
