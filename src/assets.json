@@ -85,7 +85,7 @@
         },
         {
             "name": "PseuDough /*WIP*/",
-            "desc": "PseuDough is an interpreted programming language that borrows syntax ideas commonly found in code snippets of computer science books. The goals of the language are readibility and to parallel mathematical notations. This project consists of designing the language, building a stack-based bytecode interpreter, and writing documentation hosted on a flask webserver.",
+            "desc": "PseuDough is an interpreted programming language that borrows syntax ideas commonly found in code snippets of computer science books. The goals of the language are readibility and to parallel mathematical notations. This project consists of designing the language, building a stack-based bytecode interpreter, creating a garbage collector, and writing documentation hosted on a flask webserver.",
             "url": "",
             "tools": [
                 { "path": "/C_Programming_Language.svg", "alt": "C" },
