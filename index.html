@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alexander Odorico Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/about.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/projects.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/contact.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="scripts/index.js" defer></script>
+    <script src="scripts/scene.js" defer></script>
+    <script src="scripts/title.js" defer></script>
+    <script type="text/javascript">
+        function removeActive() {
+            document.getElementById("navlinks").classList.remove("active");
+        }
+        function setActive() {
+            document.getElementById("navlinks").classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <canvas id="scene" style="position: absolute; display: block; top: 0;"></canvas>
+    <header>
+        <nav id="nav">
+            <button class="hamburger" onclick="setActive()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <a href="https://github.com/Alex7D3" target="_blank" rel="noreferrer">
+                <img src="/images/github-original.svg" alt="GitHub new window" />
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-odorico/" target="_blank" rel="noreferrer">
+                <img src="/images/linkedin-original.svg" alt="LinkedIn new window" />
+            </a>
+            <ul id="navlinks" onclick="removeActive()">
+                <li class="navlink"><a href="#top"><b>[0] home</b></a></li>
+                <li class="navlink"><a href="#about"><b>[1] about</b></a></li>
+                <li class="navlink"><a href="#projects"><b>[2] projects</b></a></li>
+                <li class="navlink"><a href="#contact"><b>[3] contact</b></a></li>
+                <li><a href="/data/AlexanderOdorico_Resume.pdf" download><b>resume</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home-content" class="dark">
+            <div id="home" class="terminal">
+                <div class="terminal-header">
+                    <div class="buttons">
+                        <span class="button close"></span>
+                        <span class="button minimize"></span>
+                        <span class="button maximize"></span>
+                    </div>
+                    <div class="name">Alex@pc:~</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="line">
+                        <span class="caret">Alex@pc:~$</span> <span class="command"></span><span class="cursor1">&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-content" class="light">
+            <div class="content">
+                <h2 id="about">About</h2>
+                <article class="desc">
+                    <p>I am a Computer Science major in my 3rd year of studies at York University.
+                    Pleased to meet you!</p>
+                    <p>Technology has always been a part of my life. When I was younger, I wondered how the video games I enjoyed to play worked on the inside,
+                    or how computers could talk to each other continents apart using the internet.
+                    This curiosity led me to learn programming in high school, and from that point, I knew the career I wanted to pursue.</p>
+                    <p>I am currently looking for opportunities to expand my skills.</p>
+                </article>
+            </div>
+            <div class="content">
+                <h2>Tools and Technologies</h2>
+                <div class="icon-grid"></div>
+            </div>
+        </section>
+        <section id="projects-content" class="dark">
+            <h2 id="projects">Projects</h2>
+            <div class="project-grid"></div>
+        </section>
+    </main>
+    <footer id="contact" class="light">
+        <h2>Contact</h2>
+        <ul>
+            <li><a href="mailto: ao11@my.yorku.ca"><b>ao11@my.yorku.ca</b></a></li>
+            <li class="phone"><b>647-385-8051</b></li>
+            <li><a href="https://www.linkedin.com/in/alexander-odorico/"><b>LinkedIn</b></a></li>
+            <li><a href="https://github.com/Alex7D3"><b>GitHub</b></a></li>
+        </ul>
+        <span>By Alexander Odorico © 2024</span>
+    </footer>
+</body>
+</html>

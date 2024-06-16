@@ -1,0 +1,36 @@
+#projects-content > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+    justify-content: center;
+    gap: 2rem;
+}
+
+#projects-content .content h3 {
+    text-wrap: nowrap;
+    a {
+        text-decoration: none;
+    }
+
+    ::after {
+        content: "";
+        background: url("../images/external-link.svg");
+        background-size: 20px auto;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align:top;
+        margin-left: 5px;
+    }
+
+    :hover {
+        text-decoration: underline;
+    }
+    
+}
+
+@media (hover: hover) {
+    .project-grid > div:hover {
+        transform: scale(1.03);
+        transition: 0.3s ease;
+    }
+}

@@ -1,0 +1,79 @@
+#home-content {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+}
+
+.terminal {
+    place-self: center;
+    width: 90%;
+    max-width: 800px;
+    background-color: black;
+    height: 50vh;
+    border-radius: 5px;
+    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+    display: flex;
+    justify-content:flex-start;
+    gap: 1rem;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--article-dark);
+    color: var(--article-light);
+    font-size: 1em;
+    border-bottom: 2px solid #000;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.button.close {
+    background-color: #ff5f56;
+}
+
+.button.minimize, .button.maximize {
+    background-color: var(--article-light);
+}
+
+.terminal-body {
+    padding: 15px;
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.caret {
+    color: #00ff00;
+}
+
+.command {
+    color: #ffffff;
+    display: inline-block;
+}
+
+.output {
+    color: #ccc;
+}
+
+.cursor1, .cursor2 {
+    background-color: #FFFFFF;
+    animation: blinker 1s step-end infinite;
+}
+
+@keyframes blinker {
+    from { background-color: #FFFFFF; }
+    50% {background-color: transparent; }
+}
