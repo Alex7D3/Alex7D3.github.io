@@ -1,0 +1,64 @@
+footer span {
+    display: block;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+footer li {
+    font-size: 1.5rem;
+    display: block;
+    flex: 0 1 20rem;
+    min-width: 6rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+    gap: 1rem;
+    flex-flow: row wrap;
+}
+
+footer a[href^="mailto"]::before {
+    content: "";
+    background: url("../images/mail.svg");
+    background-size: 30px auto;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+footer .phone b::before {
+    content: "";
+    background: url("../images/phone.svg");
+    background-size: 30px auto;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+footer a[href*="linkedin"]::before {
+    content: "";
+    background: url("../images/linkedin.svg");
+    background-size: 30px auto;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+footer a[href*="github"]::before {
+    content: "";
+    background: url("../images/github.svg");
+    background-size: 30px auto;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
