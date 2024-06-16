@@ -52,8 +52,14 @@
 .terminal-body {
     padding: 15px;
     color: #fff;
-    font-size: 0.9em;
+    font-size: .8em;
     line-height: 1.4;
+}
+
+@media screen and (min-width: 960px) {
+    .terminal-body {
+        font-size: 1em;
+    }
 }
 
 .caret {
