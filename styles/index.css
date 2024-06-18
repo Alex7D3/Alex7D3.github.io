@@ -2,8 +2,8 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     color-scheme: dark;
-    --off-white: #f2f3f4;
-    --night: #121212ff;
+    --off-white: #F2F3F4;
+    --night: #121212;
     --article-light: #333333;
     --article-dark: #CCCCCC;
     --nav-color: #363636;

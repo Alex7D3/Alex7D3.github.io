@@ -17,7 +17,6 @@
         { "path": "/images/android-original.svg", "alt": "Android" },
         { "path": "/images/gradle-original.svg", "alt": "Gradle"},
         { "path": "/images/maven-original.svg", "alt": "Maven" },
-        { "path": "/images/kotlin-original.svg", "alt": "Kotlin" },
         { "path": "/images/spring-original.svg", "alt": "Spring" },
         { "path": "/images/mongodb-original.svg", "alt": "MongoDB" },
         { "path": "/images/redis-original.svg", "alt": "Redis" },
