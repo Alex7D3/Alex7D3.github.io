@@ -75,7 +75,7 @@
     color: var(--article-dark);
 }
 
-.cursor1, .cursor2 {
+.cursor {
     background-color: #FFFFFF;
     animation: blinker 1s step-end infinite;
 }
@@ -83,4 +83,9 @@
 @keyframes blinker {
     from { background-color: #FFFFFF; }
     50% {background-color: transparent; }
+}
+
+.terminal a:hover {
+    color: #FFFFFF;
+    transition: 0.5s ease;
 }

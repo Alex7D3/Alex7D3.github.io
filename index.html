@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="scripts/index.js" defer></script>
     <script src="scripts/scene.js" defer></script>
-    <script src="scripts/title.js" defer></script>
+    <script type="module" src="scripts/title.js" defer></script>
     <script type="text/javascript">
         function removeActive() {
             document.getElementById("navlinks").classList.remove("active");
@@ -63,8 +63,8 @@
                     <div class="name">Alex@pc:~</div>
                 </div>
                 <div class="terminal-body">
-                    <div class="line">
-                        <span class="caret">Alex@pc:~$</span> <span class="command"></span><span class="cursor1">&nbsp;</span>
+                    <div id="line0" class="line">
+                        <span class="caret">Alex@pc:~$</span>&nbsp;<span id="command0" class="command"></span><span id="cursor0" class="cursor">&nbsp;</span>
                     </div>
                 </div>
             </div>

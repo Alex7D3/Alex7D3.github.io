@@ -37,7 +37,6 @@ function init() {
 function sizeCanvas() {
     WIDTH = document.body.clientWidth;
     HEIGHT = window.innerHeight;
-    console.log(dpr)
     canvas.style.height = HEIGHT + "px";
     canvas.style.width = WIDTH  + "px";
     canvas.width = WIDTH *dpr;

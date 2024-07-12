@@ -94,5 +94,20 @@
                 { "path": "/images/css3-original.svg", "alt": "CSS 3" }
             ]
         }
+    ],
+
+    "commands": [
+        {
+            "command": "echo 'hello, world!'",
+            "result": "hello, world!"
+        },
+        {
+            "command": "cat ./home/my-links.txt",
+            "result": "<a href='https://www.linkedin.com/in/alexander-odorico/' target='_blank' rel='noreferrer'>linkedin.com/in/alexander-odorico/</a><br><a href='https://github.com/Alex7D3' target='_blank' rel='noreferrer'>github.com/Alex7D3</a><br>"
+        },
+        {
+            "command": "echo 'thank you!'",
+            "result": "thank you!"
+        }
     ]
 }
