@@ -1,7 +1,5 @@
 #about-content {
     display: grid;
-    background-color: #f2f3f4;
-    color: #212121;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 35rem));
     justify-content: space-around;
 }

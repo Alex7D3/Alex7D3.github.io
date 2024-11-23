@@ -26,7 +26,7 @@ $(document).ready(() => {
         const project = $("<div></div>").addClass("content").attr("idx", idx);
         const iconGrid = $("<div></div>").addClass("icon-grid");
         const article = $(`<article>${desc}</article>`);
-        const title = $("<h3></h3>").append($(`<a>${name}</a>`)
+        const title = $("<h2></h2>").append($(`<a>${name}</a>`)
             .attr("href", url)
             .attr("target", "_blank")
             .attr("rel", "noreferrer")

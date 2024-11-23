@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/projects.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/experience.css">
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="scripts/index.js" defer></script>
@@ -44,16 +45,17 @@
             </a>
             <ul id="navlinks" onclick="removeActive()">
                 <li class="navlink"><a href="#top"><b>[0] home</b></a></li>
-                <li class="navlink"><a href="#about"><b>[1] about</b></a></li>
+                <li class="navlink"><a href="#about-me"><b>[1] about me</b></a></li>
                 <li class="navlink"><a href="#projects"><b>[2] projects</b></a></li>
-                <li class="navlink"><a href="#contact"><b>[3] contact</b></a></li>
+                <li class="navlink"><a href="#experience"><b>[3] experience</b></a></li>
+                <li class="navlink"><a href="#contact"><b>[4] contact</b></a></li>
                 <li><a href="/data/AlexanderOdorico_Resume.pdf" download><b>resume</b></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="home-content" class="dark">
-            <div id="home" class="terminal">
+        <section id="home-content">
+            <div class="terminal">
                 <div class="terminal-header">
                     <div class="buttons">
                         <span class="button close"></span>
@@ -69,9 +71,9 @@
                 </div>
             </div>
         </section>
-        <section id="about-content" class="light">
+        <section id="about-content">
             <div class="content">
-                <h2 id="about">About</h2>
+                <h1 id="about-me">About</h1>
                 <article class="desc">
                     <p>I am a Computer Science major in my 3rd year of studies at York University.
                     Pleased to meet you!</p>
@@ -82,17 +84,34 @@
                 </article>
             </div>
             <div class="content">
-                <h2>Tools and Technologies</h2>
+                <h1 id="tools">Tools and Technologies</h1>
                 <div class="icon-grid"></div>
             </div>
         </section>
-        <section id="projects-content" class="dark">
-            <h2 id="projects">Projects</h2>
+        <h1 id="projects">Projects</h1>
+        <section id="projects-content">
             <div class="project-grid"></div>
         </section>
+        <h1 id="experience">Experience</h1>
+        <section id="experience-content" class="light">
+            <div class="content top">
+                <h2>theScore</h2>
+                <div>
+                    <div><img src="/images/Score_TV_Network_logo.svg" height="100px"></div>
+                    <h3>Sept 2024 - April 2025</h3>
+                </div>
+            </div>
+            <div class="content">
+                <h2>York University</h2>
+                <div>
+                    <div><img src="/images/Logo_York_University.svg" height="100px"></div>
+                    <h3>Sept 2021 - April 2026</h3>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="contact" class="light">
-        <h2>Contact</h2>
+    <footer id="contact" class="dark">
+        <h1>Contact</h1>
         <ul>
             <li><a href="mailto: ao11@my.yorku.ca"><b>ao11@my.yorku.ca</b></a></li>
             <li class="phone"><b>647-385-8051</b></li>

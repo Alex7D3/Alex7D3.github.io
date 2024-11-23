@@ -1,5 +1,5 @@
 const minDist = 200;
-const maxParticles = 200;
+const maxParticles = 100;
 const positions = new Float32Array(maxParticles * 2);
 const velocities = new Float32Array(maxParticles * 2);
 const dpr = window.devicePixelRatio || 1;
@@ -39,10 +39,11 @@ function sizeCanvas() {
     HEIGHT = window.innerHeight;
     canvas.style.height = HEIGHT + "px";
     canvas.style.width = WIDTH  + "px";
-    canvas.width = WIDTH *dpr;
-    canvas.height = HEIGHT *dpr;
+    canvas.width = WIDTH * dpr;
+    canvas.height = HEIGHT * dpr;
     context.scale(dpr, dpr);
-    particleCount = Math.min(Math.floor((WIDTH * HEIGHT) / 20000), maxParticles);
+    particleCount = Math.min(Math.floor((WIDTH * HEIGHT) / 10000), maxParticles);
+	console.log(particleCount)
 }
 
 function update() {

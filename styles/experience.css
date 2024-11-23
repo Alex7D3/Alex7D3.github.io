@@ -1,0 +1,23 @@
+#experience-content div.content {
+    border-top: 2px solid var(--article-dark);
+}
+
+#experience-content div.content {
+    padding-top: 1rem;
+}
+
+#experience-content .content.top {
+    border: none;
+}
+
+#experience-content div.content div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem;
+    align-items: center;
+}
+
+#experience-content div.content img {
+    position: absolute;
+}
