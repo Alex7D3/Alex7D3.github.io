@@ -3,14 +3,14 @@
 }
 
 #experience-content div.content {
-    padding-top: 1rem;
+    padding: 4rem;
 }
 
 #experience-content .content.top {
     border: none;
 }
 
-#experience-content div.content div {
+#experience-content div.content > div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -18,6 +18,6 @@
     align-items: center;
 }
 
-#experience-content div.content img {
-    position: absolute;
+#experience-content div.content >div >div {
+    flex: 1;
 }
