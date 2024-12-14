@@ -62,9 +62,9 @@ nav {
 
 }
 
-#navlinks li a[download]::after {
+#navlinks li a[href*="Resume.pdf"]::after {
     content: "";
-    background: url("../images/download.svg");
+    background: url("../images/description_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg");
     background-size: 20px auto;
     width: 20px;
     height: 20px;
@@ -75,7 +75,7 @@ nav {
 
 #navlinks li a[href^="#contact"]::after {
     content: "";
-    background: url("../images/mail-light.svg");
+    background: url("../images/mail_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg");
     background-size: 20px auto;
     width: 20px;
     height: 20px;
@@ -86,7 +86,7 @@ nav {
 
 #navlinks li a[href^="#top"]::after {
     content: "";
-    background: url("../images/home.svg");
+    background: url("../images/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg");
     background-size: 20px auto;
     width: 20px;
     height: 20px;
@@ -97,7 +97,7 @@ nav {
 
 #navlinks li a[href^="#projects"]::after {
     content: "";
-    background: url("../images/code.svg");
+    background: url("../images/code_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg");
     background-size: 20px auto;
     width: 20px;
     height: 20px;
@@ -108,7 +108,18 @@ nav {
 
 #navlinks li a[href^="#about"]::after {
     content: "";
-    background: url("../images/file-text.svg");
+    background: url("../images/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg");
+    background-size: 20px auto;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 5px;
+}
+
+#navlinks li a[href^="#experience"]::after {
+    content: "";
+    background: url("../images/work_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg");
     background-size: 20px auto;
     width: 20px;
     height: 20px;
