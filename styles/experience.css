@@ -1,16 +1,16 @@
-#experience-content div.content {
+#experience-content div.exp {
     border-top: 2px solid var(--article-dark);
 }
 
-#experience-content div.content {
+#experience-content div.exp {
     padding: 4rem;
 }
 
-#experience-content .content.top {
+#experience-content .exp.top {
     border: none;
 }
 
-#experience-content div.content > div {
+#experience-content div.exp > div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -18,6 +18,6 @@
     align-items: center;
 }
 
-#experience-content div.content >div >div {
+#experience-content div.exp >div >div {
     flex: 1;
 }

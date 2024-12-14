@@ -71,11 +71,18 @@ article {
 
 .content {
     margin: 0 1rem;
+    background: rgba(128, 0, 128, 0.5);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
+
+section, footer {
+    margin-top: 6rem;
 }
 
 canvas {
-    display: block;
-    position: absolute;
+    position: fixed;
+    height: 100%;
     width: 100%;
     z-index: -1;
     top: 0;
@@ -87,10 +94,15 @@ a {
     color: var(--primary-color);
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
+
+section ul li {
+    text-align: left;
+    margin: 0 2rem;
+}
 button {
     border: 1px solid var(--nav-color);
     font-family: inherit;
@@ -99,7 +111,6 @@ button {
     cursor: pointer;
 }
 
-/* button:hover {
-    background: var(--highlight-color);
-    color: var(--primary-color);
-} */
+main {
+    overflow-y: auto;
+}

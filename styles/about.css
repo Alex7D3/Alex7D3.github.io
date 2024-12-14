@@ -1,5 +1,6 @@
 #about-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 35rem));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 40rem));
     justify-content: space-around;
+    gap: 6rem;
 }

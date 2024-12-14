@@ -1,15 +1,14 @@
 #home-content {
-    min-height: 100vh;
-    min-height: 100svh;
-    display: grid;
+    width: 100%;
 }
 
 .terminal {
     text-align: left;
-    place-self: center;
+    margin:0 auto;
     width: 90%;
     max-width: 800px;
     background-color: black;
+    margin-top: 20vh;
     height: 50vh;
     border-radius: 5px;
     

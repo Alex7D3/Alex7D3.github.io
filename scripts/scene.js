@@ -42,7 +42,7 @@ function sizeCanvas() {
     canvas.width = WIDTH * dpr;
     canvas.height = HEIGHT * dpr;
     context.scale(dpr, dpr);
-    particleCount = Math.min(Math.floor((WIDTH * HEIGHT) / 10000), maxParticles);
+    particleCount = Math.min(Math.floor((WIDTH * HEIGHT) / 20000), maxParticles);
 	console.log(particleCount)
 }
 

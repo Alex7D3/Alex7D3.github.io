@@ -29,7 +29,7 @@
     </script>
 </head>
 <body>
-    <canvas id="scene" style="position: absolute; display: block; top: 0;"></canvas>
+    <canvas id="scene"></canvas>
     <header>
         <nav id="nav">
             <button class="hamburger" onclick="setActive()">
@@ -49,7 +49,7 @@
                 <li class="navlink"><a href="#projects"><b>[2] projects</b></a></li>
                 <li class="navlink"><a href="#experience"><b>[3] experience</b></a></li>
                 <li class="navlink"><a href="#contact"><b>[4] contact</b></a></li>
-                <li><a href="/data/AlexanderOdorico_Resume.pdf" download><b>resume</b></a></li>
+                <li><a href="/data/Alexander_Odorico_Resume.pdf" target="_blank" rel="noreferrer noopener"><b>resume</b></a></li>
             </ul>
         </nav>
     </header>
@@ -75,12 +75,42 @@
             <div class="content">
                 <h1 id="about-me">About</h1>
                 <article class="desc">
-                    <p>I am a Computer Science major in my 3rd year of studies at York University.
-                    Pleased to meet you!</p>
-                    <p>Technology has always been a part of my life. When I was younger, I wondered how the video games I enjoyed to play worked on the inside,
-                    or how computers could talk to each other continents apart using the internet.
-                    This curiosity led me to learn programming in high school, and from that point, I knew the career I wanted to pursue.</p>
-                    <p>I am currently looking for opportunities to expand my skills.</p>
+                    <p>I am a Computer Science major in my 4th year of studies at York University.
+                        Pleased to meet you!</p>
+                    <p>Technology has always been a part of my life. When I was younger, I wondered how the video games
+                        I enjoyed to play worked on the inside,
+                        or how computers could talk to each other continents apart using the internet.
+                        This curiosity led me to learn programming in high school, and from that point, I knew the
+                        career path I wanted to pursue.</p>
+                    <p>There are <i>too many</i> interesting topics in computer science, but here are some that I particularly enjoy:</p>
+                    <ul>
+                        <li>Operating Systems</li>
+                        <li>Computer Networks</li>
+                        <li>Compilers</li>
+                        <li>Database Systems</li>
+                        <li>Data Structures and Algorithms</li>
+                    </ul>
+
+                    <p>I enjoy learning something new every day!</p>
+                </article>
+            </div>
+            <div class="content">
+                <h1>Vision</h1>
+                <article class="desc">
+                    <p>I hope to use computer science to inspire creativity in other people. I look up to the greats in this field, and I want to contribute to the software world in my own way.</p>I envision myself working on projects with a theoretical side, but that are also practical and allow others to express themselves with code. I would love to work on programming languages, operating systems, and fundamental tools used to interface with computers.<br> I hope to have a position where I can teach others. I have great respect for my professors, who I have learned so much from. Part of how I plan to serve the common good is to produce materials for learning, because as a student, you begin to appreciate the lengths teachers go to help others understand. It’s also fun and insightful!
+                </article>
+            </div>
+            <div class="content">
+                <h1>Goals</h1>
+                <article class="desc">
+                    <ul>
+                        <li>
+                            I believe to achieve my long-term goals I need to be more disciplined in how I spend my time, and how I adapt when something unexpected causes my plans to change. I need to challenge myself to produce results more consistently, as I only have so much time left as a student. There are many short-term goals I have set for self-improvement, and too often I have failed to follow through because of changing circumstances or lack of clear deadlines.
+                        </li>
+                        <li>
+                            I have realized some past mistakes I have had when interviewing, talking to professors, and now talking with coworkers were caused in part by my own communication. Sometimes I struggle to interpret what others have said to me or fail to take in the necessary and relevant information from conversations. I also have difficulty expressing my own thoughts concisely. I know improving my speaking is important, since communication is so crucial in software development. Recently I have also had to introduce myself to many new people, so being able to do so effectively to describe myself and my experience is something I would like to improve at.
+                        </li>
+                    </ul>
                 </article>
             </div>
             <div class="content">
@@ -88,29 +118,37 @@
                 <div class="icon-grid"></div>
             </div>
         </section>
+        <section>
+            <h1>About Me Video</h1>
+            <video controls width="900">
+                <source src="/data/Alexander-Odorico-Why-Me.mp4">
+            </video>
+        </section>
         <h1 id="projects">Projects</h1>
         <section id="projects-content">
             <div class="project-grid"></div>
         </section>
         <h1 id="experience">Experience</h1>
         <section id="experience-content" class="light">
-            <div class="content top">
-                <h2>theScore</h2>
-                <div>
-                    <div><img src="/images/Score_TV_Network_logo.svg" height="100px"></div>
+            <div class="content">
+                <div class="exp top">
+                    <h2>theScore</h2>
                     <div>
-                        <h3>QA Automation Engineer Co-op</h3>
-                        <p>Sept 2024 - April 2025</p>
+                        <div><img src="/images/Score_TV_Network_logo.svg" height="100px"></div>
+                        <div>
+                            <h3>QA Automation Engineer Co-op</h3>
+                            <p>Sept 2024 - April 2025</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="content">
-                <h2>York University</h2>
-                <div>
-                    <div><img src="/images/Logo_York_University.svg" height="100px"></div>
+                <div class="exp">
+                    <h2>York University</h2>
                     <div>
-                        <h3>BSc Computer Science (Honors)</h3>
-                        <p>Sept 2021 - April 2026</p>
+                        <div><img src="/images/Logo_York_University.svg" height="100px"></div>
+                        <div>
+                            <h3>BSc Computer Science (Honors)</h3>
+                            <p>Sept 2021 - April 2026</p>
+                        </div>
                     </div>
                 </div>
             </div>
