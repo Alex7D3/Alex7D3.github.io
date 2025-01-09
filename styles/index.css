@@ -74,6 +74,7 @@ article {
     background: rgba(128, 0, 128, 0.5);
     padding: 1rem 1rem;
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 section, footer {
@@ -91,8 +92,9 @@ canvas {
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-color)
 }
+
 
 nav ul {
     list-style-type: none;

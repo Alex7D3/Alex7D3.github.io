@@ -30,17 +30,6 @@ footer a[href^="mailto"]::before {
     margin-right: 10px;
 }
 
-footer .phone b::before {
-    content: "";
-    background: url("../images/phone.svg");
-    background-size: 30px auto;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 10px;
-}
-
 footer a[href*="linkedin"]::before {
     content: "";
     background: url("../images/linkedin.svg");
