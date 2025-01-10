@@ -14,6 +14,7 @@
         { "path": "/images/css3-original.svg", "alt": "CSS 3" },
         { "path": "/images/bootstrap-original.svg", "alt": "Bootstrap" },
         { "path": "/images/java-original.svg", "alt": "Java" },
+        { "path": "/images/kotlin-original.svg", "alt": "Kotlin" },
         { "path": "/images/android-original.svg", "alt": "Android" },
         { "path": "/images/gradle-original.svg", "alt": "Gradle"},
         { "path": "/images/maven-original.svg", "alt": "Maven" },
@@ -27,9 +28,12 @@
         { "path": "/images/linux-original.svg", "alt": "Linux" },
         { "path": "/images/windows11-original.svg", "alt": "Windows" },
         { "path": "/images/raspberrypi-original.svg", "alt": "RaspberryPi" },
+        { "path": "/images/nginx-original.svg", "alt": "NGINX" },
         { "path": "/images/docker-plain.svg", "alt": "Docker"},
         { "path": "/images/amazonwebservices-original-wordmark.svg", "alt": "AWS"},
-        { "path": "/images/azure-original.svg", "alt": "Azure" }
+        { "path": "/images/azure-original.svg", "alt": "Azure" },
+        { "path": "/images/jenkins-original.svg", "alt": "Jenkins" },
+        { "path": "/images/selenium-original.svg", "alt": "Selenium" }
     ],
 
     "projects": [
@@ -54,10 +58,12 @@
             "url": "https://github.com/Alex7D3/MyAniBot",
             "tools": [
                 { "path": "/images/javascript-original.svg", "alt": "JavaScript" },
+                { "path": "/images/typescript-original.svg", "alt": "TypeScript" },
                 { "path": "/images/nodejs-original.svg", "alt": "NodeJS" },
-                { "path": "/images/express-original copy.svg", "alt": "Express.js" },
+                { "path": "/images/nginx-original.svg", "alt": "NGINX" },
                 { "path": "/images/redis-original.svg", "alt": "Redis" },
-                { "path": "/images/raspberrypi-original.svg", "alt": "RaspberryPi" }
+                { "path": "/images/raspberrypi-original.svg", "alt": "RaspberryPi" },
+                { "path": "/images/docker-plain.svg", "alt": "Docker"}
             ]
         },
         {
@@ -89,7 +95,6 @@
             "url": "https://github.com/Alex7D3/Alex7D3.github.io",
             "tools": [
                 { "path": "/images/javascript-original.svg", "alt": "JavaScript" },
-                { "path": "/images/jquery-original.svg", "alt": "jQuery"},
                 { "path": "/images/html5-original.svg", "alt": "HTML 5" },
                 { "path": "/images/css3-original.svg", "alt": "CSS 3" }
             ]
